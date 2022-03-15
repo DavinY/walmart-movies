@@ -1,8 +1,11 @@
 seeder:
   file: ./seeder/seeder.rb
   disabled: false
+
 parsers:
-  - page_type: listings
-      file: ./parsers/listings.rb
+  - file: ./parsers/listings.rb
+    page_type: listings
+    disabled: false
   - file: ./parsers/products.rb
-      page_type: products
+    page_type: products
+    disabled: false
