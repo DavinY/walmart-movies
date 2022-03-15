@@ -8,10 +8,7 @@ products.each do |product|
         pages <<{
             url: url,
             page_type: 'products',
-            method: "GET",
-            vars:{
-                category: page['vars']['category'],
-            }
+            method: "GET",      
         }
     end
 end
@@ -24,9 +21,6 @@ pagination_links.each do |link|
             url: url,
             page_type: 'listings',
             fetch_type: 'browser',
-            vars:{
-                category: page['vars']['category']
-            }
         }
     end
 end
